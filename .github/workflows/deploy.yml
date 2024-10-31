@@ -29,13 +29,12 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Build site
       run: |
-        cd docs
         make html
-    - name: Upload docs
+    - name: Upload site
       uses: actions/upload-artifact@v4
       with:
-        name: docs
-        path: docs/build/html
+        name: site
+        path: build/html
     - name: Publish docs to Github Pages
       if: startsWith(github.event.ref, 'refs/tags')
       uses: JamesIves/github-pages-deploy-action@releases/v4
