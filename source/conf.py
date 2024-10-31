@@ -26,3 +26,26 @@ source_suffix = ['.rst', '.md']
 
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
+
+# Added theme configuration. See: https://pydata-sphinx-theme.readthedocs.io/
+
+# html_logo = "_static/logo.png"
+
+html_theme_options = {
+    "use_edit_page_button": True,
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/tractometry/",
+            "icon": "fab fa-github-square",
+        }]
+
+}
+
+html_context = {
+    "github_url": "https://github.com",
+    "github_user": "tractometry",
+    "github_repo": "tractometry.github.io",
+    "github_version": "main",
+    "doc_path": "source",
+}
