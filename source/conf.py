@@ -32,6 +32,7 @@ html_static_path = ['_static']
 html_logo = "_static/logo.png"
 
 html_theme_options = {
+    "secondary_sidebar_items": [],
     "use_edit_page_button": True,
     "icon_links": [
         {
