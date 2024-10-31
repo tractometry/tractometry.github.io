@@ -29,7 +29,7 @@ html_static_path = ['_static']
 
 # Added theme configuration. See: https://pydata-sphinx-theme.readthedocs.io/
 
-# html_logo = "_static/logo.png"
+html_logo = "_static/logo.png"
 
 html_theme_options = {
     "use_edit_page_button": True,
