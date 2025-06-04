@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,16 +27,16 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="_static/documentation_options.js?v=5929fcd5"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
@@ -44,6 +44,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Examples" href="examples/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -128,6 +129,12 @@
 <nav>
   <ul class="bd-navbar-elements navbar-nav">
     
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="examples/index.html">
+    Examples
+  </a>
+</li>
+
   </ul>
 </nav></div>
       
@@ -215,6 +222,12 @@
 <nav>
   <ul class="bd-navbar-elements navbar-nav">
     
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="examples/index.html">
+    Examples
+  </a>
+</li>
+
   </ul>
 </nav></div>
           
@@ -255,9 +268,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -278,13 +296,80 @@
                   
   <section id="tractometry">
 <h1>Tractometry<a class="headerlink" href="#tractometry" title="Link to this heading">#</a></h1>
-<section id="projects">
-<h2>Projects<a class="headerlink" href="#projects" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://tractometry.org/pyAFQ"><em>pyAFQ</em></a>: Automated Fiber Quantification in Python</p>
-<p><a class="reference external" href="https://tractometry.org/AFQ-Insight"><em>AFQ-Insight</em></a>: Machine learning and statistics for tractomtery.</p>
-<p><a class="reference external" href="https://tractometry.org/tractable"><em>Tractable</em></a>: R-based statistical analysis of tractometry.</p>
-<p><a class="reference external" href="https://tractometry.org/AFQ-Browser"><em>AFQ-Browser</em></a>: Interactive exploratory visualization and sharing of tractometry studies.</p>
-<p><a class="reference external" href="https://tractometry.org/tractoscope"><em>Tractoscope</em></a>: Visualization of large openly-available tractometry studies.</p>
+<p>Tractometry uses diffusion-weighted MRI (dMRI) to extract microstructural tissue properties of major white matter pathways. Here, we maintain a suite of integrated, open-source software that performs all analysis stages:</p>
+<p><a class="reference external" href="https://tractometry.org/pyAFQ"><strong>pyAFQ</strong></a>: Automated Fiber Quantification in Python:<br />
+ • post-processing of dMRI data<br />
+ • delineation of major white matter pathways<br />
+ • modeling of the tissue properties within them<br />
+ • expects pre-processed data. Data can be pre-processed with <a class="reference external" href="https://qsiprep.readthedocs.io/en/latest/"><em>QSIprep</em></a></p>
+<p><a class="reference external" href="https://tractometry.org/AFQ-Insight"><strong>AFQ-Insight</strong></a>: Machine learning and statistics for tractomtery:<br />
+ • novel machine learning models such as convolutional neural networks (CNNs) and recurrent neural network (RNNs)<br />
+ • more standard approaches, such as ordinary least squares (OLS) and principal component analysis (PCA)<br />
+ • integrated with <a class="reference external" href="https://scikit-learn.org/stable/"><em>scikit-learn</em></a> and adapted for tract data, bridging these two worlds</p>
+<p><a class="reference external" href="https://tractometry.org/tractable"><strong>Tractable</strong></a>: R-based statistical analysis of tractometry:<br />
+ • focuses on generalized additive models (GAMs)</p>
+<p><a class="reference external" href="https://tractometry.org/AFQ-Browser"><strong>AFQ-Browser</strong></a>: Interactive exploratory visualization and sharing of tractometry studies:<br />
+ • allows researchers to interactively query the data to explore patterns</p>
+<p><a class="reference external" href="https://nrdg.github.io/tractoscope"><strong>Tractoscope</strong></a>: Visualization of large openly-available tractometry studies.</p>
+<section id="examples">
+<h2><a class="reference internal" href="examples/index.html"><span class="std std-doc">Examples</span></a><a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
+<p><strong>pyAFQ</strong></p>
+<ul>
+<li><p><em>Basics</em></p>
+<p>• <a class="reference internal" href="examples/001.html"><span class="std std-doc">Introduction</span></a><br />
+• <a class="reference internal" href="examples/002.html"><span class="std std-doc">Visualizing AFQ derivatives</span></a></p>
+</li>
+<li><p><em>Extensions</em></p>
+<p>• <a class="reference internal" href="examples/003.html"><span class="std std-doc">BabyAFQ: tractometry for infant dMRI data</span></a><br />
+• <a class="reference internal" href="examples/004.html"><span class="std std-doc">RecoBundles for tract delineation</span></a></p>
+</li>
+<li><p><em>Adding New Bundles</em></p>
+<p>• <a class="reference internal" href="examples/005.html"><span class="std std-doc">Optic Radiations</span></a><br />
+• <a class="reference internal" href="examples/006.html"><span class="std std-doc">Acoustic Radiations</span></a><br />
+• <a class="reference internal" href="examples/007.html"><span class="std std-doc">SLF 1/2/3 Subdivisions</span></a></p>
+</li>
+<li><p><em>Acceleration</em></p>
+<p>• <a class="reference internal" href="examples/008.html"><span class="std std-doc">GPU Tractography</span></a><br />
+• <a class="reference internal" href="examples/009.html"><span class="std std-doc">Multiprocessing for Model Fitting (Ray)</span></a></p>
+</li>
+</ul>
+<p><strong>AFQ-Insight</strong></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="examples/010.html"><span class="std std-doc">Parametric Statistics for Group Comparison</span></a></p></li>
+<li><p><a class="reference internal" href="examples/011.html"><span class="std std-doc">Regression: Predict Age from White Matter</span></a></p></li>
+<li><p><a class="reference internal" href="examples/012.html"><span class="std std-doc">Classification: ALS Diagnosis</span></a></p></li>
+</ul>
+<p><strong>Tractable</strong></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="examples/013.html"><span class="std std-doc">Fitting Generalized Additive Models (GAMs)</span></a></p></li>
+</ul>
+</section>
+<section id="how-to-get-help">
+<h2>How to get help<a class="headerlink" href="#how-to-get-help" title="Link to this heading">#</a></h2>
+<p>We encourage you to seek help and share your questions with the community. Here’s how to get support for Tractometry-related projects:</p>
+<ol class="arabic simple">
+<li><p><strong>Check <a class="reference external" href="https://neurostars.org/">NeuroStars</a></strong><br />
+NeuroStars is a community forum for neuroimaging questions. Search for existing answers or post your question using the <code class="docutils literal notranslate"><span class="pre">pyafq</span></code>, <code class="docutils literal notranslate"><span class="pre">afq-insight</span></code>, or other relevant tags.</p></li>
+<li><p><strong>Browse or open issues on the respective GitHub repositories</strong><br />
+Many questions may already be answered in the project’s issue tracker. If not, you can open a new issue:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/tractometry/pyAFQ/issues"><strong>pyAFQ</strong></a></p></li>
+<li><p><a class="reference external" href="https://github.com/tractometry/AFQ-Insight/issues"><strong>AFQ-Insight</strong></a></p></li>
+<li><p><a class="reference external" href="https://github.com/tractometry/tractable/issues"><strong>Tractable</strong></a></p></li>
+<li><p><a class="reference external" href="https://github.com/tractometry/AFQ-Browser/issues"><strong>AFQ-Browser</strong></a></p></li>
+<li><p><a class="reference external" href="https://github.com/tractometry/tractoscope/issues"><strong>Tractoscope</strong></a></p></li>
+</ul>
+</li>
+<li><p><strong>Include details when asking for help</strong><br />
+When posting, please include:</p>
+<ul class="simple">
+<li><p>The software version you’re using</p></li>
+<li><p>Relevant code or command-line calls</p></li>
+<li><p>Error messages (if any)</p></li>
+<li><p>Expected vs. actual behavior</p></li>
+</ul>
+</li>
+</ol>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -300,6 +385,15 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="right-next"
+       href="examples/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Examples</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -318,8 +412,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -339,7 +433,7 @@
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>
@@ -352,7 +446,8 @@
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

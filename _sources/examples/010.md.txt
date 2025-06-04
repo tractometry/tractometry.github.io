@@ -1,0 +1,5 @@
+# Parametric Statistics for Group Comparison
+
+<div>
+    <iframe src="../_static/010-afqinsight-mass-univariate.html" width="100%" height="500px"></iframe>
+</div>

@@ -1,0 +1,5 @@
+# Visualizing AFQ derivatives
+
+<div>
+    <iframe src="../_static/002-viz.html" width="100%" height="500px"></iframe>
+</div>
